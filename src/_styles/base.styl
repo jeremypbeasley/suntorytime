@@ -1,0 +1,108 @@
+
+html
+  min-height 100%
+
+*
+  -webkit-tap-highlight-color rgba(0, 0, 0, 0)  
+  -webkit-font-smoothing antialiased
+  font-smoothing antialiased
+  box-sizing border-box
+
+body
+  height 100%
+  overflow-y auto
+  overflow-x hidden
+  margin 0
+  background background-color
+
+.hidden
+  display none
+  opacity 0
+ 
+img 
+  max-width 100%
+
+
+section
+  padding 7vw
+  overflow visible
+  &:nth-child(1)
+    padding-top 7vw
+  @media tablet
+    padding 5vw
+    &:nth-child(1)
+      padding-top 2.5vw
+      
+#lastfm span:last-child
+  display none
+
+#lastfm span:nth-child(28)::after 
+  content: " and "
+
+.divider
+  width 50%
+  height 2px
+  border-bottom 1px solid #ccc
+  margin-top grid-int-phone * 2
+  margin-bottom grid-int-phone * 1.4
+  @media tablet 
+    display none
+        
+.column
+  margin-bottom 5vw
+
+    
+// #oweninthemiddle styles
+
+.oitmImg
+  width 100%
+  margin 0
+  padding 0
+  
+.oitmBox
+  width 100vw
+  height 100vw
+  float left
+  a
+    padding 0
+    margin 0
+    border none
+  @media tablet
+    width 50vw
+    height 50vw
+  @media desktop
+    width 33.333333vw
+    height 33.333333vw
+
+.oitmIntro
+  height 100vw
+  width 100vw
+  @media tablet
+    height 50vw
+    width 50vw
+  @media desktop
+    height 33.3333333vw
+    width 33.33333vw
+  
+.oitmInside 
+  padding 10vw
+  @media tablet
+    padding 5vw
+  p
+    padding-top 0
+    i
+      font-style italic
+    a
+      text-decoration none
+      transition all 200ms ease-out
+      border-bottom 1px solid #000
+      padding-bottom 0.15rem
+      color #000
+      
+.Name
+  margin-bottom 15vw
+  margin-top 30vw
+  @media tablet
+    margin-bottom 2.5vw
+    margin-top 2.5vw
+

@@ -1,0 +1,135 @@
+
+
+html
+  font-size 16px
+  font-family typeface-body
+  color text-color
+  @media laptop
+  	font-size 25px
+
+body, p
+	font-size 1rem
+	
+::selection
+    color: white; 
+    background: white;
+
+.stopSelect 
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+p
+	line-height 170%
+	margin 0 0 1.5em 0
+	@media laptop
+		font-size 1rem
+	&:last-of-type 
+		margin-bottom -.2em
+		overflow visible
+	i, em
+		//font-family typeface-body-italic
+		font-style italic	
+	&.highlighted
+		background pink
+
+a
+	//text-decoration underlined
+	//color text-color
+	text-decoration line-through
+	// transition all 200ms ease-out
+	// border-bottom .7px solid white
+	// padding-bottom .05rem
+	font-family Arial-ItalicMT
+	color black
+	&:hover
+		text-decoration none
+	// &:visited
+	// 	color purple
+	// 	border-color purple
+	@media laptop
+		border-width .1rem		
+		
+ul 
+    list-style circle
+    padding 0px
+    margin 0 0 1rem 0
+    li 
+        margin -0.5rem 0 .5rem 3rem
+        line-height 180%		
+	
+strong 
+	font-weight normal
+	border-bottom 1px solid black
+	margin-bottom 5vw
+	display block
+
+h1,h2,h3,h4,h5,h6
+	margin 0 0
+	padding: 0 0
+	font-weight: normal
+	//font-family: typeface-headline
+	//font-weight: 300
+	line-height 125%
+	position relative
+	z-index 9999
+	i
+		font-style normal
+
+h1
+	font-size 9vw
+	font-family typeface-headline
+	margin 1rem 0 3rem 0
+	@media laptop
+		font-size 4vw
+	
+h2
+	font-size 9vw
+	// margin 11vw 0
+	font-family typeface-headline
+	margin 0em 0 1em 0
+	@media laptop
+		font-size 4vw
+		margin -.53rem 0px 2.5rem 0px
+
+h3 
+	font-size 1rem
+	padding 1rem 0 3rem 0
+	
+h4
+	font-size 2.3rem
+	
+h5
+	font-size 1.8rem
+	
+h6
+	font-size 1.25rem
+	
+//EXCEPTIONS
+
+.heading h2
+	margin 0px
+	
+// BUTTONS
+
+.underlined a
+	padding-bottom 3px
+	border-bottom #000 solid 1px
+	color text-color
+
+.quote
+	position relative
+	z-index 15 !important
+	h2
+		font-family typeface-body-italic
+		z-index 15
+	p
+		color text-color
+		//opacity .6
+	span
+		position absolute
+		left -.4em
+		
