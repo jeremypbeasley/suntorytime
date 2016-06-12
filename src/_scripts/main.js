@@ -31,7 +31,7 @@ if (document.documentElement.clientWidth > 800) {
 	    showcursor: false,
 	    contentType: 'html',
 	    onStringTyped: function() {
-	    	$('p, .divider').delay(800).fadeTo( "slow", 1 );
+	    	$('p').delay(800).fadeTo( "slow", 1 );
 	    },
 	    // onStringTyped: function() {
 	    // 	$('p').velocity("transition.fadeIn", {
