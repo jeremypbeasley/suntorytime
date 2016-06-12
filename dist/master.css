@@ -1516,7 +1516,7 @@ textarea {
 }
 html {
   font-size: 16px;
-  font-family: Times New Roman, Times, Serif;
+  font-family: Times New Roman, TimesNewRomanPSMT, Times, Serif;
   color: #000;
 }
 @media (min-width: 62em) {
@@ -1530,7 +1530,7 @@ p {
 }
 ::selection {
   color: #fff;
-  background: #fff;
+  background: #00f;
 }
 .stopSelect {
   -webkit-touch-callout: none;
@@ -1561,9 +1561,11 @@ p.highlighted {
   background: #ffc0cb;
 }
 a {
-  text-decoration: line-through;
-  font-family: Arial-ItalicMT;
+  font-family: Arial-Italic;
   color: #000;
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.05rem;
+  text-decoration: none;
 }
 a:hover {
   text-decoration: none;
@@ -1597,6 +1599,7 @@ h6 {
   margin: 0 0;
   padding: 0 0;
   font-weight: normal;
+  font-family: Times-Bold, TimesNewRomanPS-BoldMT;
   line-height: 125%;
   position: relative;
   z-index: 9999;
@@ -1611,12 +1614,12 @@ h6 i {
 }
 h1 {
   font-size: 9vw;
-  font-family: typeface-headline;
-  margin: 1rem 0 3rem 0;
+  margin: 4rem 0 3rem 0;
 }
 @media (min-width: 62em) {
   h1 {
     font-size: 4vw;
+    margin: -0.1rem 0 3rem 0;
   }
 }
 h2 {
@@ -1965,6 +1968,6 @@ section:nth-child(1) {
 @media (min-width: 48em) {
   .Name {
     margin-bottom: 2.5vw;
-    margin-top: 2.5vw;
+    margin-top: 1.5vw;
   }
 }

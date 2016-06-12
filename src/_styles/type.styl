@@ -12,7 +12,7 @@ body, p
 	
 ::selection
     color: white; 
-    background: white;
+    background: blue;
 
 .stopSelect 
     -webkit-touch-callout: none;
@@ -39,12 +39,14 @@ p
 a
 	//text-decoration underlined
 	//color text-color
-	text-decoration line-through
 	// transition all 200ms ease-out
 	// border-bottom .7px solid white
 	// padding-bottom .05rem
-	font-family Arial-ItalicMT
+	font-family Arial-Italic
 	color black
+	border-bottom 1px solid black
+	padding-bottom .05rem
+	text-decoration none
 	&:hover
 		text-decoration none
 	// &:visited
@@ -71,8 +73,7 @@ h1,h2,h3,h4,h5,h6
 	margin 0 0
 	padding: 0 0
 	font-weight: normal
-	//font-family: typeface-headline
-	//font-weight: 300
+	font-family: Times-Bold, TimesNewRomanPS-BoldMT 
 	line-height 125%
 	position relative
 	z-index 9999
@@ -81,10 +82,10 @@ h1,h2,h3,h4,h5,h6
 
 h1
 	font-size 9vw
-	font-family typeface-headline
-	margin 1rem 0 3rem 0
+	margin 4rem 0 3rem 0
 	@media laptop
 		font-size 4vw
+		margin -.1rem 0 3rem 0
 	
 h2
 	font-size 9vw
