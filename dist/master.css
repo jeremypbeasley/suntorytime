@@ -1962,8 +1962,8 @@ section:nth-child(1) {
   color: #000;
 }
 .Name {
-  margin-bottom: 15vw;
-  margin-top: 30vw;
+  margin-bottom: 10vw;
+  margin-top: 15vw;
 }
 @media (min-width: 48em) {
   .Name {
