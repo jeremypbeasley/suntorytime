@@ -1527,11 +1527,11 @@ font-family: 'CircularStdBook';
 html {
   font-size: 16px;
   font-family: Times New Roman, TimesNewRomanPSMT, Times, Serif;
-  color: #000;
+  color: #fff;
 }
 @media (min-width: 62em) {
   html {
-    font-size: 25px;
+    font-size: 18px;
   }
 }
 body,
@@ -1539,8 +1539,8 @@ p {
   font-size: 1rem;
 }
 ::selection {
-  color: #fff;
-  background: #00f;
+  color: #000;
+  background: #000;
 }
 .stopSelect {
   -webkit-touch-callout: none;
@@ -1572,8 +1572,8 @@ p.highlighted {
 }
 a {
   font-family: "CircularStdBook";
-  color: #000;
-  border-bottom: 1px solid #000;
+  color: #fff;
+  border-bottom: 1px solid #fff;
   padding-bottom: 0.05rem;
   text-decoration: none;
   font-size: 0.9rem;
@@ -1662,7 +1662,7 @@ h6 {
 .underlined a {
   padding-bottom: 3px;
   border-bottom: #000 solid 1px;
-  color: #000;
+  color: #fff;
 }
 .quote {
   position: relative;
@@ -1673,7 +1673,7 @@ h6 {
   z-index: 15;
 }
 .quote p {
-  color: #000;
+  color: #fff;
 }
 .quote span {
   position: absolute;
@@ -1862,7 +1862,7 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   margin: 0;
-  background: #fff;
+  background: #000;
 }
 .hidden {
   display: none;
@@ -1870,9 +1870,6 @@ body {
 }
 img {
   max-width: 100%;
-}
-p {
-  opacity: 0;
 }
 section {
   padding: 7vw;
@@ -1901,7 +1898,6 @@ section:nth-child(1) {
   border-bottom: 1px solid #ccc;
   margin-top: 14vw;
   margin-bottom: 9.799999999999999vw;
-  opacity: 0;
 }
 @media (min-width: 48em) {
   .divider {
