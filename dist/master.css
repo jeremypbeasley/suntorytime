@@ -1514,6 +1514,16 @@ textarea {
     order: 1;
   }
 }
+@font-face {
+font-family: 'CircularStdBook';
+	src: url('_fonts/CircularStdBook.eot');
+	src: url('_fonts/CircularStdBook.eot') format('embedded-opentype'),
+	     url('_fonts/CircularStdBook.woff2') format('woff2'),
+	     url('_fonts/CircularStdBook.woff') format('woff'),
+	     url('_fonts/CircularStdBook.ttf') format('truetype'),
+	     url('_fonts/CircularStdBook.svg#CircularStdBook') format('svg');
+}
+
 html {
   font-size: 16px;
   font-family: Times New Roman, TimesNewRomanPSMT, Times, Serif;
@@ -1561,11 +1571,12 @@ p.highlighted {
   background: #ffc0cb;
 }
 a {
-  font-family: Arial-Italic;
+  font-family: "CircularStdBook";
   color: #000;
   border-bottom: 1px solid #000;
   padding-bottom: 0.05rem;
   text-decoration: none;
+  font-size: 0.9rem;
 }
 a:hover {
   border-color: #00f;
@@ -1890,6 +1901,7 @@ section:nth-child(1) {
   border-bottom: 1px solid #ccc;
   margin-top: 14vw;
   margin-bottom: 9.799999999999999vw;
+  opacity: 0;
 }
 @media (min-width: 48em) {
   .divider {

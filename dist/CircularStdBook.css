@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'CircularStdBook';
+    src: url('fonts/CircularStdBook.eot');
+    src: url('fonts/CircularStdBook.eot') format('embedded-opentype'),
+         url('fonts/CircularStdBook.woff2') format('woff2'),
+         url('fonts/CircularStdBook.woff') format('woff'),
+         url('fonts/CircularStdBook.ttf') format('truetype'),
+         url('fonts/CircularStdBook.svg#CircularStdBook') format('svg');
+}
