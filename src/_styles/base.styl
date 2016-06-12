@@ -22,7 +22,9 @@ body
 img 
   max-width 100%
 
-
+p 
+  opacity 0
+  
 section
   padding 7vw
   overflow visible
@@ -100,9 +102,81 @@ section
       color #000
       
 .Name
-  margin-bottom 10vw
-  margin-top 15vw
   @media tablet
-    margin-bottom 2.5vw
+    margin-bottom 3.5vw
     margin-top 1.5vw
+    
+.MyName 
+  display none
+  @media laptop
+    display block
 
+.WelcomeMessage 
+  height 4em
+  display inline-block
+  margin-bottom 4em
+  @media laptop
+    height 3em
+    margin-bottom 1em
+
+.WelcomeMessage:after {
+  visibility: visible;
+  content: '';
+  background-color: blue;
+  display: inline-block;
+  position: relative;
+  width: 2px;
+  height: .9em;
+  top: 5px;
+  margin-left: 5px;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.typed-cursor {
+  display: none;
+}
+
+// .typed-cursor{
+//   opacity: 1;
+//   -webkit-animation: blink 0.7s infinite;
+//   -moz-animation: blink 0.7s infinite;
+//   animation: blink 0.7s infinite;
+//   display: inline-block;
+// }
+// @keyframes blink {
+//   0% { opacity:1; }
+//   50% { opacity:0; }
+//   100% { opacity:1; }
+// }
+// @-webkit-keyframes blink {
+//   0% { opacity:1; }
+//   50% { opacity:0; }
+//   100% { opacity:1; }
+// }
+// @-moz-keyframes blink {
+//   0% { opacity:1; }
+//   50% { opacity:0; }
+//   100% { opacity:1; }
+// }

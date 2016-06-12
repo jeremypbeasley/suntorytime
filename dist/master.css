@@ -1568,7 +1568,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: none;
+  border-color: #00f;
 }
 @media (min-width: 62em) {
   a {
@@ -1614,12 +1614,11 @@ h6 i {
 }
 h1 {
   font-size: 9vw;
-  margin: 4rem 0 3rem 0;
+  margin: -0.1rem 0 3rem 0;
 }
 @media (min-width: 62em) {
   h1 {
     font-size: 4vw;
-    margin: -0.1rem 0 3rem 0;
   }
 }
 h2 {
@@ -1861,6 +1860,9 @@ body {
 img {
   max-width: 100%;
 }
+p {
+  opacity: 0;
+}
 section {
   padding: 7vw;
   overflow: visible;
@@ -1961,13 +1963,87 @@ section:nth-child(1) {
   padding-bottom: 0.15rem;
   color: #000;
 }
-.Name {
-  margin-bottom: 10vw;
-  margin-top: 15vw;
-}
 @media (min-width: 48em) {
   .Name {
-    margin-bottom: 2.5vw;
+    margin-bottom: 3.5vw;
     margin-top: 1.5vw;
+  }
+}
+.MyName {
+  display: none;
+}
+@media (min-width: 62em) {
+  .MyName {
+    display: block;
+  }
+}
+.WelcomeMessage {
+  height: 4em;
+  display: inline-block;
+  margin-bottom: 4em;
+}
+@media (min-width: 62em) {
+  .WelcomeMessage {
+    height: 3em;
+    margin-bottom: 1em;
+  }
+}
+.WelcomeMessage:after {
+  visibility: visible;
+  content: '';
+  background-color: #00f;
+  display: inline-block;
+  position: relative;
+  width: 2px;
+  height: 0.9em;
+  top: 5px;
+  margin-left: 5px;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+@-webkit-keyframes blink {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.typed-cursor {
+  display: none;
+}
+@-moz-keyframes blink {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-o-keyframes blink {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }
