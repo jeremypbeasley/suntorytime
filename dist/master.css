@@ -2025,6 +2025,9 @@ section:nth-child(1) {
 .typed-cursor {
   display: none;
 }
+.PhotoMe {
+  margin-bottom: 4rem;
+}
 @-moz-keyframes blink {
   from, to {
     opacity: 0;
