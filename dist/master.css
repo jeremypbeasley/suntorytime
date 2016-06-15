@@ -1537,7 +1537,7 @@ font-family: 'CircularStdBook';
 html {
   font-size: 16px;
   font-family: MaisonNeueMono, Andale Mono, Times New Roman, TimesNewRomanPSMT, Times, Serif;
-  color: #fff;
+  color: #000;
 }
 @media (min-width: 62em) {
   html {
@@ -1549,8 +1549,8 @@ p {
   font-size: 1rem;
 }
 ::selection {
-  color: #000;
-  background: #000;
+  color: #fff;
+  background: #fff;
 }
 .stopSelect {
   -webkit-touch-callout: none;
@@ -1581,7 +1581,7 @@ p.highlighted {
   background: #ffc0cb;
 }
 a {
-  color: #fff;
+  color: #000;
   padding-bottom: 0.3rem;
   text-decoration: underlined;
   font-size: 1.1rem;
@@ -1665,7 +1665,7 @@ h6 {
 .underlined a {
   padding-bottom: 3px;
   border-bottom: #000 solid 1px;
-  color: #fff;
+  color: #000;
 }
 .quote {
   position: relative;
@@ -1676,7 +1676,7 @@ h6 {
   z-index: 15;
 }
 .quote p {
-  color: #fff;
+  color: #000;
 }
 .quote span {
   position: absolute;
@@ -1865,7 +1865,7 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   margin: 0;
-  background: #000;
+  background: #fff;
 }
 .hidden {
   display: none;
