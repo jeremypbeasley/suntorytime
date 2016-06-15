@@ -2021,6 +2021,9 @@ section:nth-child(1) {
 .PhotoMe {
   margin-bottom: 4rem;
 }
+.PhotoMe:hover {
+  transform: rotate(12deg);
+}
 @-moz-keyframes blink {
   from, to {
     opacity: 0;
