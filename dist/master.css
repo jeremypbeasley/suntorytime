@@ -1994,7 +1994,7 @@ section:nth-child(1) {
 .WelcomeMessage:after {
   visibility: visible;
   content: '';
-  background-color: #00f;
+  background-color: #000;
   display: inline-block;
   position: relative;
   width: 2px;
