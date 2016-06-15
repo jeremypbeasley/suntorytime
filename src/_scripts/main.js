@@ -10,29 +10,29 @@ $(document).ready(function() {
 
 // TYPE EFFECT (WITH SIZE CONDITION)
 
-// if (document.documentElement.clientWidth < 800) {
-// 	$(function(){
-// 		$(".WelcomeMessage").typed({
-// 	    strings: ["My son ^200 says that ^100 I ^100 “make stuff ^100 for the ^100 Internet”. ^400 <br>I'll take that."],
-// 	    typeSpeed: 20,
-// 	    showcursor: false,
-// 	    contentType: 'html',
-// 	    onStringTyped: function() {
-// 	    	$('p, .divider').delay(800).fadeTo( "slow", 1 );
-// 	    },
-// 		});
-// 	});
-// }
-// if (document.documentElement.clientWidth > 800) {
-// 	$(function(){
-// 		$(".WelcomeMessage").typed({
-// 	    strings: ["My son ^200 says that ^100 I ^100 “make stuff ^100 for the ^100 Internet”. ^400 I'll take that."],
-// 	    typeSpeed: 20,
-// 	    showcursor: false,
-// 	    contentType: 'html',
-// 	    onStringTyped: function() {
-// 	    	$('p').delay(800).fadeTo( "slow", 1 );
-// 	    },
-// 		});
-// 	});
-// }
+if (document.documentElement.clientWidth < 800) {
+	$(function(){
+		$(".WelcomeMessage").typed({
+	    strings: ["My son ^200 says that ^100 I ^100 “make stuff ^100 for the ^100 Internet”. ^400 <br>I'll take that."],
+	    typeSpeed: 20,
+	    showcursor: false,
+	    contentType: 'html',
+	    onStringTyped: function() {
+	    	$('p, .divider').delay(800).fadeTo( "slow", 1 );
+	    },
+		});
+	});
+}
+if (document.documentElement.clientWidth > 800) {
+	$(function(){
+		$(".WelcomeMessage").typed({
+	    strings: ["My son ^200 says that ^100 I ^100 “make stuff ^100 for the ^100 Internet”. ^400 I'll take that."],
+	    typeSpeed: 20,
+	    showcursor: false,
+	    contentType: 'html',
+	    onStringTyped: function() {
+	    	$('p').delay(800).fadeTo( "slow", 1 );
+	    },
+		});
+	});
+}
