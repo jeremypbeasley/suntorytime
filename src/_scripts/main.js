@@ -26,7 +26,7 @@ if (document.documentElement.clientWidth < 800) {
 if (document.documentElement.clientWidth > 800) {
 	$(function(){
 		$(".WelcomeMessage").typed({
-	    strings: ["My son ^200 says that ^100 I ^100 “make stuff ^100 for the ^100 Internet”. ^400 I'll take that."],
+	    strings: ["My son ^200 says that ^100 I ^100 “make stuff ^100 for the ^100 Internet.” ^400 I'll take that."],
 	    typeSpeed: 20,
 	    showcursor: false,
 	    contentType: 'html',
