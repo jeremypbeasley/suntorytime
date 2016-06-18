@@ -9840,9 +9840,9 @@ if (document.documentElement.clientWidth < 800) {
 	    typeSpeed: 20,
 	    showcursor: false,
 	    contentType: 'html',
-	    onStringTyped: function() {
-	    	$('p, .divider').delay(800).fadeTo( "slow", 1 );
-	    },
+	    // onStringTyped: function() {
+	    // 	$('p, .divider').delay(800).fadeTo( "slow", 1 );
+	    // },
 		});
 	});
 }
@@ -9853,9 +9853,9 @@ if (document.documentElement.clientWidth > 800) {
 	    typeSpeed: 20,
 	    showcursor: false,
 	    contentType: 'html',
-	    onStringTyped: function() {
-	    	$('p').delay(800).fadeTo( "slow", 1 );
-	    },
+	    // onStringTyped: function() {
+	    // 	$('p').delay(800).fadeTo( "slow", 1 );
+	    // },
 		});
 	});
 }

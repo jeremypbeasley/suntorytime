@@ -1872,6 +1872,8 @@ body {
 }
 img {
   max-width: 100%;
+  padding: 0;
+  margin: 0;
 }
 section {
   padding: 7vw;
@@ -2054,5 +2056,50 @@ section:nth-child(1) {
   }
   50% {
     opacity: 1;
+  }
+}
+.PhotoGallery {
+  background: #000;
+}
+.PhotoIntro {
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  overflow: auto;
+}
+.PhotoIntro p {
+  position: relative;
+  top: 48vh;
+  color: #fff;
+}
+.PhotoGallery a {
+  margin: 0;
+  padding: 0;
+}
+.PhotoGallery img {
+  margin-bottom: -4px;
+}
+.PhotoGallery ul,
+.PhotoGallery li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+}
+.PhotoGallery li {
+  width: 100%;
+  float: left;
+  height: 0px;
+  padding-bottom: 56%;
+}
+@media (min-width: 48em) {
+  .PhotoGallery li {
+    width: 50%;
+    padding-bottom: 28%;
+  }
+}
+@media (min-width: 62em) {
+  .Mobile {
+    display: none;
   }
 }
