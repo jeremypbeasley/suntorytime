@@ -17,3 +17,13 @@ font-family: 'CircularStdBook';
          url('_fonts/maisonneuemono.ttf') format('truetype'),
          url('_fonts/maisonneuemono.svg#maisonneuemono') format('svg');
 }
+
+@font-face {
+    font-family: 'NeueHaasUnicaProMedium';
+    src: url('_fonts/LinotypeNeueHaasUnicaProMedium.eot');
+    src: url('_fonts/LinotypeNeueHaasUnicaProMedium.eot') format('embedded-opentype'),
+         url('_fonts/LinotypeNeueHaasUnicaProMedium.woff2') format('woff2'),
+         url('_fonts/LinotypeNeueHaasUnicaProMedium.woff') format('woff'),
+         url('_fonts/LinotypeNeueHaasUnicaProMedium.ttf') format('truetype'),
+         url('_fonts/LinotypeNeueHaasUnicaProMedium.svg#LinotypeNeueHaasUnicaProMedium') format('svg');
+}
