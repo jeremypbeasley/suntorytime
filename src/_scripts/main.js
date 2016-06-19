@@ -1,12 +1,20 @@
-// LAST.FM FUNCTIONALITY
+// LAST.FM TOP TRACKS
 
-$(document).ready(function() {
-	$.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=thisisheroic&period=7day&limit=6&api_key=3cbc1a3aa903935d08223263bcc3ba0b&format=json", function(result){
-	    $.each(result.toptracks.track, function(i, track){
-	        $('#lastfm').append('<a target="_blank" href="' + 'http://www.google.com/search?q=' + track.name + ' &#8212; ' + track.artist.name +'">' + track.name + '</a> &#8212; ' + track.artist.name + '<span></span><Br> ');
-	    });
-	});
-});
+function loadTracks() {
+  // getting JSON from my lastfm account via their API 
+  $.getJSON('http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=thisisheroic&period=7day&limit=6&api_key=3cbc1a3aa903935d08223263bcc3ba0b&format=json', function(result) {
+    // making an empty variable for the big ol string you're making
+    var output = "";
+    // looping through each item
+    $.each(result.toptracks.track, function(i, track){
+      output += '<a target="_blank" href="' + 'http://www.google.com/search?q=' + track.name + ' &#8212; ' + track.artist.name +'">' + track.name + '</a> &#8212; ' + track.artist.name + '<span></span><Br> ';
+    });
+    // putting the shit all together
+    document.getElementById("lastfm").innerHTML = output;
+  });
+};
+
+loadTracks();
 
 // TYPE EFFECT (WITH SIZE CONDITION)
 
