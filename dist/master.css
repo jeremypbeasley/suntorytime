@@ -1535,7 +1535,7 @@ font-family: 'CircularStdBook';
 }
 
 html {
-  font-size: 16px;
+  font-size: 12px;
   font-family: MaisonNeueMono, Andale Mono, Times New Roman, TimesNewRomanPSMT, Times, Serif;
   color: #000;
 }
@@ -1626,7 +1626,7 @@ h6 i {
   font-style: normal;
 }
 h1 {
-  font-size: 9vw;
+  font-size: 11vw;
   margin: -0.1rem 0 3rem 0;
 }
 @media (min-width: 62em) {
