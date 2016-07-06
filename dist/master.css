@@ -1697,7 +1697,11 @@ ul {
 li {
   line-height: 190%;
   margin-bottom: 1.5rem;
-  list-style: lower-roman;
+}
+li:before {
+  content: "—";
+  margin-left: -1.7rem;
+  margin-right: 1rem;
 }
 .col-md-1,
 .col-md-2,
