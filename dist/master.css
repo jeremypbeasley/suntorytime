@@ -1545,13 +1545,13 @@ font-family: 'CircularStdBook';
 }
 
 html {
-  font-size: 12px;
-  font-family: MaisonNeueMono, Andale Mono, Times New Roman, TimesNewRomanPSMT, Times, Serif;
+  font-size: 17px;
+  font-family: NeueHaasUnicaProMedium, Arial, Sanserif;
   color: #000;
 }
 @media (min-width: 62em) {
   html {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 body,
@@ -1595,8 +1595,9 @@ p.Heading {
 }
 a {
   color: #000;
-  padding-bottom: 0.3rem;
-  text-decoration: underlined;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.1rem;
+  text-decoration: none;
 }
 a:hover {
   border-color: #fff;
@@ -1898,18 +1899,19 @@ img {
   margin: 0;
 }
 section {
-  padding: 7vw;
+  padding: 10vw;
   overflow: visible;
 }
 section:nth-child(1) {
-  padding-top: 7vw;
+  padding-top: 10vw;
 }
 @media (min-width: 48em) {
   section {
-    padding: 5vw;
+    padding: 10vw;
+    max-width: 40rem;
   }
   section:nth-child(1) {
-    padding-top: 2.5vw;
+    padding-top: 10vw;
   }
 }
 #lastfm span:last-child {
