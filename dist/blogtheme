@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{Title}{block:PostTitle} - {PostTitle}{/block:PostTitle}</title>
+  <meta name="tumblr-theme" content="30257" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>   
+  <meta http-equiv="imagetoolbar" content="no" />   
+  <link rel="icon" href="{Favicon}" />
+  <link rel="stylesheet" href="http://jeremypbeasley.com/master.css">
+    {block:Description}
+        <meta name="description" content="{MetaDescription}" />
+    {/block:Description}  
+    
+    <script>
+        window.onload = function(){
+          var anchors = document.getElementById('regular_body').getElementsByTagName('a');
+          for (var i=0; i<anchors.length; i++){
+            anchors[i].setAttribute('target', '_blank');
+          }
+        }
+           
+     </script>
+    
+</head>
+<body>
+
+<div class="BlogContainer">
+    <header class="BlogHeader">
+    <p><span><a href="/">Thinking for a living.</a></span><br>Jeremy P. Beasley</p>
+  </header>
+    {block:Posts}
+    <div class="BlogPost" id="post_{PostID}">
+      {block:Text}         
+          <div class="regular content">
+              {block:Title}<p class="BlogTitle"><a href="{Permalink}">{Title}</a></p>{/block:Title}
+              <div class="regular_body" id="regular_body">{Body}</div>
+          </div>
+        {/block:Text}
+      
+      {block:IfShowTags}
+        {block:HasTags}
+                <ul class="tags">
+                  {block:Tags}
+                  <li class="tag">
+                      <a href="{TagURL}">#{Tag}</a>
+                  </li>
+                  {/block:Tags}
+                </ul>
+              {/block:HasTags}
+      {/block:IfShowTags}
+  
+      {block:IfShowDates}
+        {block:Date}
+          <div class="date">         
+            <a href="{Permalink}" class="small">
+              {block:IfUseTimeAgoForDate}
+                {TimeAgo}
+              {/block:IfUseTimeAgoForDate}
+              {block:IfNotUseTimeAgoForDate}
+                {TimeAgo}
+              {/block:IfNotUseTimeAgoForDate} 
+              
+              {block:NoteCount}
+                {block:IfShowNoteCounts}
+                  / {NoteCountWithLabel}
+                {/block:IfShowNoteCounts}
+              {/block:NoteCount}
+            </a>
+          </div>
+        {/block:Date}
+      {/block:IfShowDates}
+              
+    </div>
+  {/block:Posts}
+  
+
+  </div>
+  
+<footer class="BlogFooter">
+    <p><a href="http://jeremypbeasley.com/">Jeremy P. Beasley</a> is a product designer and front-end developer living in Seattle, WA. </p>
+</footer>
+
+</div>  
+
+
+</body>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53018602-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</html>
