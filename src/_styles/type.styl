@@ -133,23 +133,23 @@ h6
 
 // LISTS
 
-ul, li {
+ul, ul li, ol, ol li{
 	padding: 0;
 	margin: 0;
 	//list-style: none;
 }
 
-ul {
+ul, ol {
 	margin: 2rem 0;
 }
  
-li {
+ul li, ol li {
 	line-height: 190%;
 	margin-bottom: 1.5rem;
 }
 
-// li:before {
-// 	content: "—";
-// 	margin-left: -1.7rem;
-// 	margin-right 1rem
-// }
+ul li:before {
+	content: "—";
+	margin-left: -1.7rem;
+	margin-right 1rem
+}
