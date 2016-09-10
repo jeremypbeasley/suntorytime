@@ -1,20 +1,16 @@
 // LAST.FM TOP TRACKS
 
-function loadTracks() {
-  // getting JSON from my lastfm account via their API 
-  $.getJSON('http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=thisisheroic&period=7day&limit=6&api_key=3cbc1a3aa903935d08223263bcc3ba0b&format=json', function(result) {
-    // making an empty variable for the big ol string you're making
-    var output = "";
-    // looping through each item
-    $.each(result.toptracks.track, function(i, track){
-      output += '<a target="_blank" href="' + 'http://www.google.com/search?q=' + track.name + ' &#8212; ' + track.artist.name +'">' + track.name + '</a> &#8212; ' + track.artist.name + '<span></span><Br> ';
-    });
-    // putting the shit all together
-    document.getElementById("lastfm").innerHTML = output;
-  });
-};
+// function loadTracks() {
+//   $.getJSON('http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=thisisheroic&period=7day&limit=6&api_key=3cbc1a3aa903935d08223263bcc3ba0b&format=json', function(result) {
+//     var output = "";
+//     $.each(result.toptracks.track, function(i, track){
+//       output += '<a target="_blank" href="' + 'http://www.google.com/search?q=' + track.name + ' &#8212; ' + track.artist.name +'">' + track.name + '</a> &#8212; ' + track.artist.name + '<span></span><Br> ';
+//     });
+//     document.getElementById("lastfm").innerHTML = output;
+//   });
+// };
 
-loadTracks();
+// loadTracks();
 
 // TYPE EFFECT (WITH SIZE CONDITION)
 
@@ -48,36 +44,34 @@ if (document.documentElement.clientWidth > 800) {
 
 // MUSIC
 
-function listProducts(sortedlist) {
-    var output = '';
-    $.each(sortedlist, function(i) {
-        output += '<div class="MusicItem">';
-        output += '<div class="MusicCover" style="background-image: url(' + sortedlist[i].content + ')"></div>';
-        output += '<a class="MusicTitle" href="' + sortedlist[i].description + '">' + sortedlist[i].name + '</a>';
-        output += '</div>';
-    });
-    output += '';
-    document.getElementById("MusicContainer").innerHTML = output;
-};
+// function listProducts(sortedlist) {
+//     var output = '';
+//     $.each(sortedlist, function(i) {
+//         output += '<div class="MusicItem">';
+//         output += '<div class="MusicCover" style="background-image: url(' + sortedlist[i].content + ')"></div>';
+//         output += '<a class="MusicTitle" href="' + sortedlist[i].description + '">' + sortedlist[i].name + '</a>';
+//         output += '</div>';
+//     });
+//     output += '';
+//     document.getElementById("MusicContainer").innerHTML = output;
+// };
 
-// function sortProducts(array, key) {
-//     return array.sort(function(a, b) {
-//         var x = a[key];
-//         var y = b[key];
-//         return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+// // function sortProducts(array, key) {
+// //     return array.sort(function(a, b) {
+// //         var x = a[key];
+// //         var y = b[key];
+// //         return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+// //     });
+// // }
+
+// var productsListSorted = "";
+
+// function callProducts() {
+//     $.getJSON('http://app.dropmark.com/355854.json?key=638be65e149826ec8892&callback=?', function(result) {
+//         var productsList = result.items;
+//         //productsListSorted = sortProducts(productsList, 'name');
+//         listProducts(productsList);
 //     });
 // }
 
-var productsListSorted = "";
-
-//http://app.dropmark.com/355854.json?key=638be65e149826ec8892&callback=?
-
-function callProducts() {
-    $.getJSON('data.json', function(result) {
-        var productsList = result.items;
-        //productsListSorted = sortProducts(productsList, 'name');
-        listProducts(productsList);
-    });
-}
-
-callProducts();
+// callProducts();
