@@ -45,15 +45,15 @@ if (document.documentElement.clientWidth > 800) {
 // MUSIC
 
 // function listProducts(sortedlist) {
-//     var output = '';
-//     $.each(sortedlist, function(i) {
-//         output += '<div class="MusicItem">';
-//         output += '<div class="MusicCover" style="background-image: url(' + sortedlist[i].content + ')"></div>';
-//         output += '<a class="MusicTitle" href="' + sortedlist[i].description + '">' + sortedlist[i].name + '</a>';
-//         output += '</div>';
-//     });
-//     output += '';
-//     document.getElementById("MusicContainer").innerHTML = output;
+//   var output = '';
+//   $.each(sortedlist, function(i) {
+//     output += '<div class="MusicItem">';
+//     output += '<div class="MusicCover" style="background-image: url(' + sortedlist[i].content + ')"></div>';
+//     output += '<a class="MusicTitle" href="' + sortedlist[i].description + '">' + sortedlist[i].name + '</a>';
+//     output += '</div>';
+//   });
+//   output += '';
+//   document.getElementById("MusicContainer").innerHTML = output;
 // };
 
 // // function sortProducts(array, key) {
@@ -67,11 +67,21 @@ if (document.documentElement.clientWidth > 800) {
 // var productsListSorted = "";
 
 // function callProducts() {
-//     $.getJSON('http://app.dropmark.com/355854.json?key=638be65e149826ec8892&callback=?', function(result) {
-//         var productsList = result.items;
-//         //productsListSorted = sortProducts(productsList, 'name');
-//         listProducts(productsList);
-//     });
+//   $.getJSON('http://app.dropmark.com/355854.json?key=638be65e149826ec8892&callback=?', function(result) {
+//     var productsList = result.items;
+//     //productsListSorted = sortProducts(productsList, 'name');
+//     listProducts(productsList);
+//   });
 // }
 
 // callProducts();
+
+$('body').on('click', '.MusicItem', function (){
+  newlocation = $(this).find(".MusicTitle").attr("href");
+  window.open(
+    newlocation,
+    '_blank' 
+  );
+  console.log(newlocation)
+  return false;
+});
