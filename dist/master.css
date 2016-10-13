@@ -1903,7 +1903,6 @@ section:nth-child(1) {
 @media (min-width: 48em) {
   section {
     padding: 10vw;
-    max-width: 40rem;
   }
   section:nth-child(1) {
     padding-top: 10vw;
