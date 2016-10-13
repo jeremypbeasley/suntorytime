@@ -2181,6 +2181,16 @@ p.BlogTitle {
 .MusicTitle {
   line-height: 160%;
 }
+@media print {
+  body,
+  p,
+  a {
+    font-size: 10pt;
+  }
+  .workhistory {
+    margin-top: 270px;
+  }
+}
 @media (min-width: 62em) {
   .Mobile {
     display: none;
