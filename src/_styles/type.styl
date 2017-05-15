@@ -1,20 +1,22 @@
 
 
 html
-  font-size 17px
+  font-size 15px
   font-family typeface-body
   color text-color
+  text-transform: uppercase;
+  letter-spacing: .03em;
   @media laptop
-  	font-size 17px
+  	font-size 16px
 
 body, p
 	font-size 1rem
-	
-::selection
-    color: background-color; 
-    background: background-color;
 
-.stopSelect 
+::selection
+    color: background-color;
+    background: text-color;
+
+.stopSelect
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -27,12 +29,12 @@ p
 	margin 0 0 1.5em 0
 	@media laptop
 		font-size 1rem
-	&:last-of-type 
+	&:last-of-type
 		margin-bottom -.2em
 		overflow visible
 	i, em
 		//font-family typeface-body-italic
-		font-style italic	
+		font-style italic
 	&.highlighted
 		background pink
 	&.Heading
@@ -40,24 +42,24 @@ p
 
 a
 	color text-color
-	border-bottom 1px solid #333
+	border-bottom .08rem solid #333
 	padding-bottom .1rem
 	text-decoration none
 	//font-size 1.1rem
 	&:hover
 		border-color white
 	// &:visited
-	// 	color purple	
-		
-// ul 
+	// 	color purple
+
+// ul
 //     list-style circle
 //     padding 0px
 //     margin 0 0 1rem 0
-//     li 
+//     li
 //         margin -0.5rem 0 .5rem 3rem
-//         line-height 180%		
-	
-strong 
+//         line-height 180%
+
+strong
 	font-weight normal
 	border-bottom 1px solid black
 	margin-bottom 5vw
@@ -78,7 +80,7 @@ h1
 	margin -.1rem 0 3rem 0
 	@media laptop
 		font-size 4vw
-	
+
 h2
 	font-size 9vw
 	// margin 11vw 0
@@ -88,28 +90,28 @@ h2
 		font-size 4vw
 		margin -.53rem 0px 2.5rem 0px
 
-h3 
+h3
 	font-size 1rem
 	padding 1rem 0 3rem 0
-	
+
 h3:before {
 	content: "#"
 }
-	
+
 h4
 	font-size 2.3rem
-	
+
 h5
 	font-size 1.8rem
-	
+
 h6
 	font-size 1.25rem
-	
+
 //EXCEPTIONS
 
 .heading h2
 	margin 0px
-	
+
 // BUTTONS
 
 .underlined a
@@ -129,7 +131,7 @@ h6
 	span
 		position absolute
 		left -.4em
-		
+
 
 // LISTS
 
@@ -142,7 +144,7 @@ ul, ul li, ol, ol li{
 ul, ol {
 	margin: 2rem 0;
 }
- 
+
 ul li, ol li {
 	line-height: 190%;
 	margin-bottom: 1.5rem;
