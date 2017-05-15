@@ -1514,7 +1514,7 @@ textarea {
     order: 1;
   }
 }
-@font-face {
+/*@font-face {
 font-family: 'CircularStdBook';
 	src: url('_fonts/CircularStdBook.eot');
 	src: url('_fonts/CircularStdBook.eot') format('embedded-opentype'),
@@ -1522,7 +1522,7 @@ font-family: 'CircularStdBook';
 	     url('_fonts/CircularStdBook.woff') format('woff'),
 	     url('_fonts/CircularStdBook.ttf') format('truetype'),
 	     url('_fonts/CircularStdBook.svg#CircularStdBook') format('svg');
-}
+}*/
 
 @font-face {
     font-family: 'MaisonNeueMono';
@@ -1534,7 +1534,7 @@ font-family: 'CircularStdBook';
          url('_fonts/maisonneuemono.svg#maisonneuemono') format('svg');
 }
 
-@font-face {
+/*@font-face {
     font-family: 'NeueHaasUnicaProMedium';
     src: url('_fonts/LinotypeNeueHaasUnicaProMedium.eot');
     src: url('_fonts/LinotypeNeueHaasUnicaProMedium.eot') format('embedded-opentype'),
@@ -1544,14 +1544,22 @@ font-family: 'CircularStdBook';
          url('_fonts/LinotypeNeueHaasUnicaProMedium.svg#LinotypeNeueHaasUnicaProMedium') format('svg');
 }
 
+@font-face {
+    font-family: 'Maison';
+    src: url('_fonts/MaisonNeueWEB-Book.woff2') format('woff2'),
+         url('_fonts/MaisonNeueWEB-Book.woff') format('woff');
+}*/
+
 html {
-  font-size: 17px;
-  font-family: Arial, NeueHaasUnicaProMedium, Arial, Sanserif;
-  color: #000;
+  font-size: 15px;
+  font-family: MaisonNeueMono, Maison, Arial, Sanserif;
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 @media (min-width: 62em) {
   html {
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 body,
@@ -1559,8 +1567,8 @@ p {
   font-size: 1rem;
 }
 ::selection {
-  color: #fff;
-  background: #fff;
+  color: #000;
+  background: rgba(255,255,255,0.7);
 }
 .stopSelect {
   -webkit-touch-callout: none;
@@ -1594,8 +1602,8 @@ p.Heading {
   margin: 5rem 0;
 }
 a {
-  color: #000;
-  border-bottom: 1px solid #333;
+  color: rgba(255,255,255,0.7);
+  border-bottom: 0.08rem solid #333;
   padding-bottom: 0.1rem;
   text-decoration: none;
 }
@@ -1671,7 +1679,7 @@ h6 {
 .underlined a {
   padding-bottom: 3px;
   border-bottom: #000 solid 1px;
-  color: #000;
+  color: rgba(255,255,255,0.7);
 }
 .quote {
   position: relative;
@@ -1682,7 +1690,7 @@ h6 {
   z-index: 15;
 }
 .quote p {
-  color: #000;
+  color: rgba(255,255,255,0.7);
 }
 .quote span {
   position: absolute;
@@ -1882,7 +1890,7 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   margin: 0;
-  background: #fff;
+  background: #000;
 }
 .hidden {
   display: none;

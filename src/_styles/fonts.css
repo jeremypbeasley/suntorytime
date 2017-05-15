@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
 font-family: 'CircularStdBook';
 	src: url('_fonts/CircularStdBook.eot');
 	src: url('_fonts/CircularStdBook.eot') format('embedded-opentype'),
@@ -6,7 +6,7 @@ font-family: 'CircularStdBook';
 	     url('_fonts/CircularStdBook.woff') format('woff'),
 	     url('_fonts/CircularStdBook.ttf') format('truetype'),
 	     url('_fonts/CircularStdBook.svg#CircularStdBook') format('svg');
-}
+}*/
 
 @font-face {
     font-family: 'MaisonNeueMono';
@@ -18,7 +18,7 @@ font-family: 'CircularStdBook';
          url('_fonts/maisonneuemono.svg#maisonneuemono') format('svg');
 }
 
-@font-face {
+/*@font-face {
     font-family: 'NeueHaasUnicaProMedium';
     src: url('_fonts/LinotypeNeueHaasUnicaProMedium.eot');
     src: url('_fonts/LinotypeNeueHaasUnicaProMedium.eot') format('embedded-opentype'),
@@ -27,3 +27,9 @@ font-family: 'CircularStdBook';
          url('_fonts/LinotypeNeueHaasUnicaProMedium.ttf') format('truetype'),
          url('_fonts/LinotypeNeueHaasUnicaProMedium.svg#LinotypeNeueHaasUnicaProMedium') format('svg');
 }
+
+@font-face {
+    font-family: 'Maison';
+    src: url('_fonts/MaisonNeueWEB-Book.woff2') format('woff2'),
+         url('_fonts/MaisonNeueWEB-Book.woff') format('woff');
+}*/
