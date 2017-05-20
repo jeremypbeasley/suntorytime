@@ -76,11 +76,25 @@ if (document.documentElement.clientWidth > 800) {
 
 // callProducts();
 
+$('body').on('click', '.Project', function (){
+	if ($(this).attr('data-link')) {
+		newlocation = $(this).attr('data-link');
+	  window.open(
+	    newlocation,
+	    '_blank'
+	  );
+	  return false;
+	} else {
+		$('.ProjectThumbnailInside').fadeTo(0, 0);
+		$(this).find('.ProjectThumbnailInside').fadeTo(100, 1);
+	}
+});
+
 $('body').on('click', '.MusicItem', function (){
   newlocation = $(this).find(".MusicTitle").attr("href");
   window.open(
     newlocation,
-    '_blank' 
+    '_blank'
   );
   console.log(newlocation)
   return false;
