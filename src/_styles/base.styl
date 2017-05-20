@@ -3,7 +3,7 @@ html
   min-height 100%
 
 *
-  -webkit-tap-highlight-color rgba(0, 0, 0, 0)  
+  -webkit-tap-highlight-color rgba(0, 0, 0, 0)
   -webkit-font-smoothing antialiased
   font-smoothing antialiased
   box-sizing border-box
@@ -18,15 +18,15 @@ body
 .hidden
   display none
   opacity 0
- 
-img 
+
+img
   max-width 100%
   padding: 0;
   margin: 0;
 
-// p 
+// p
 //   opacity 0
-  
+
 section
   padding 10vw
   overflow visible
@@ -37,11 +37,11 @@ section
     //max-width: 40rem;
     &:nth-child(1)
       padding-top 10vw
-      
+
 #lastfm span:last-child
   display none
 
-#lastfm span:nth-child(28)::after 
+#lastfm span:nth-child(28)::after
   content: " and "
 
 .divider
@@ -51,20 +51,20 @@ section
   margin-top grid-int-phone * 2
   margin-bottom grid-int-phone * 1.4
   //opacity 0
-  @media tablet 
+  @media tablet
     display none
-        
+
 .column
   margin-bottom 5vw
 
-    
+
 // #oweninthemiddle styles
 
 .oitmImg
   width 100%
   margin 0
   padding 0
-  
+
 .oitmBox
   width 100vw
   height 100vw
@@ -89,8 +89,8 @@ section
   @media desktop
     height 33.3333333vw
     width 33.33333vw
-  
-.oitmInside 
+
+.oitmInside
   padding 10vw
   @media tablet
     padding 5vw
@@ -104,91 +104,182 @@ section
       border-bottom 1px solid #000
       padding-bottom 0.15rem
       color #000
-      
-.Name
-  @media tablet
-    margin-bottom 3.5vw
-    margin-top 1.5vw
-    
-// .MyName 
-//   display none
-//   @media laptop
-//     display block
 
-.WelcomeMessage 
-  height 4em
-  display inline-block
-  margin-bottom 2em
-  @media laptop
-    height 3em
-    margin-bottom 1em
-    margin-top -.6rem
+// NEW HOME PAGE
 
-.WelcomeMessage:after {
-  visibility: visible;
-  content: '';
-  background-color: black;
-  display: inline-block;
+.Intro {
+  min-height: calc(100vh - 20vw);
+  padding: 10vw;
+  margin-bottom: 20vw;
+}
+@media laptop {
+  .Intro {
+    padding: 15vw;
+    width: 55%;
+    min-height: calc(100vh - 30vw);
+  }
+}
+.ProfilePhoto {
+  width: 100vw;
+  height: 124vw;
+  background-image: url(https://static1.squarespace.com/static/4f709f8de4b0e97c13ddc57b/54082f77e4b0db5a9ad46b4e/540a7404e4b04c699fc0d928/1409971206582/611A0558-erikotto-vscoartist.jpg?format=2500w);
+  background-size: cover;
+  margin-left: -10vw;
+  background-color: #A08A55;
+  margin-top: 10vw;
+}
+@media laptop {
+  .ProfilePhoto {
+    width: 45vw;
+    height: 60vw;
+    position: absolute;
+    right: 0;
+    top: -10vw;
+    z-index: 999;
+  }
+}
+.ProfilePhotoShadow {
+  width: 20vw;
+  height: 5vw;
+  background: blue;
+  position: absolute;
+  z-index: 999;
+  margin-left: -10vw;
+}
+@media laptop {
+  .ProfilePhotoShadow {
+    left: 60vw;
+    top: 20vw;
+    z-index: 0
+    height: 45vw;
+  }
+}
+.Projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media laptop {
+  .Projects {
+    padding: 0 5vw;
+  }
+}
+.Project {
+  margin-bottom: 10vw;
+  cursor: pointer;
+  width: 100%;
+}
+@media laptop {
+  .Project {
+    width: 45%;
+  }
+}
+.ProjectThumbnail {
+  width: 100%;
+  height: 0px;
+  background-size: cover;
+  padding-bottom: 75%;
+  background-position: center center;
   position: relative;
-  width: 2px;
-  height: .9em;
-  top: 5px;
-  margin-left: 5px;
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
 }
-
-@keyframes blink {
-  from, to {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
+.ProjectThumbnailInside {
+  width: calc(100% - 10vw);
+  height: calc(100% - 10vw);
+  background: rgba(255,255,255,.98);
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+  margin: 5vw;
+}
+@media laptop {
+  .ProjectThumbnailInside {
+    margin: 2rem;
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
   }
 }
-
-@-webkit-keyframes blink {
-  from, to {
-    opacity: 0;
+.ProjectThumbnailInside p {
+  padding: 5vw;
+}
+@media laptop {
+  .ProjectThumbnailInside p {
+    padding: 2rem;
   }
-  50% {
-    opacity: 1;
+}
+.ProjectDetails {
+  padding: 5vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media laptop {
+  .ProjectDetails {
+    padding: 1.5rem 0;
   }
 }
-
-.typed-cursor {
-  display: none;
+footer {
+  padding: 10vw;
 }
-
-.PhotoMe {
-  margin-bottom: 4rem;
+@media laptop {
+  footer {
+    padding: 5vw;
+  }
 }
-.PhotoMe:hover {
-  transform: rotate(12deg)
+@media laptop {
+  footer p {
+    width: 25rem;
+  }
 }
-
-// .typed-cursor{
-//   opacity: 1;
-//   -webkit-animation: blink 0.7s infinite;
-//   -moz-animation: blink 0.7s infinite;
-//   animation: blink 0.7s infinite;
-//   display: inline-block;
-// }
-// @keyframes blink {
-//   0% { opacity:1; }
-//   50% { opacity:0; }
-//   100% { opacity:1; }
-// }
-// @-webkit-keyframes blink {
-//   0% { opacity:1; }
-//   50% { opacity:0; }
-//   100% { opacity:1; }
-// }
-// @-moz-keyframes blink {
-//   0% { opacity:1; }
-//   50% { opacity:0; }
-//   100% { opacity:1; }
-// }
+.FooterLine {
+  width: 40%;
+  height: 1px;
+  background: black;
+  margin-bottom: 10vw;
+}
+@media laptop {
+  .FooterLine {
+    max-width: 300px;
+  }
+}
+@media laptop {
+  .BottomInfo {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/// specific Projects
+@media laptop {
+  #starbucks {
+    margin-top: 20%;
+  }
+}
+@media laptop {
+  #canlis-site {
+    width: 30%;
+    margin-top: -30%;
+    margin-left: 15%;
+  }
+}
+@media laptop {
+  #rest {
+    width: 55%;
+    margin-top: 10%;
+  }
+}
+@media laptop {
+  #smoke {
+    width: 29%;
+  }
+}
+@media laptop {
+  #happyness {
+    width: 30%;
+  }
+}
+#starbucks .ProjectThumbnail {
+  padding-bottom: 123.4%;
+}
+#represented .ProjectThumbnail {
+  padding-bottom: 123.4%;
+}
