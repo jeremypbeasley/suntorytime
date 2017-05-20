@@ -1912,8 +1912,9 @@ a {
   border-bottom: 0.08rem solid #333;
   padding-bottom: 0.1rem;
   text-decoration: none;
+  transition: all 200ms ease-out;
 }
-a:hover {
+:hover {
   border-color: #fff;
 }
 strong {
@@ -2308,7 +2309,7 @@ section:nth-child(1) {
   color: #000;
 }
 .Intro {
-  min-height: 100vh;
+  min-height: calc(100vh - 20vw);
   padding: 10vw;
   margin-bottom: 20vw;
 }
@@ -2316,12 +2317,13 @@ section:nth-child(1) {
   .Intro {
     padding: 15vw;
     width: 55%;
+    min-height: calc(100vh - 30vw);
   }
 }
 .ProfilePhoto {
   width: 100vw;
-  height: 100vh;
-  background-image: url("_img/me.jpg");
+  height: 124vw;
+  background-image: url("https://static1.squarespace.com/static/4f709f8de4b0e97c13ddc57b/54082f77e4b0db5a9ad46b4e/540a7404e4b04c699fc0d928/1409971206582/611A0558-erikotto-vscoartist.jpg?format=2500w");
   background-size: cover;
   margin-left: -10vw;
   background-color: #a08a55;
@@ -2330,20 +2332,19 @@ section:nth-child(1) {
 @media (min-width: 62em) {
   .ProfilePhoto {
     width: 45vw;
-    height: 100vh;
+    height: 60vw;
     position: absolute;
     right: 0;
-    top: -15vw;
+    top: -10vw;
     z-index: 999;
   }
 }
 .ProfilePhotoShadow {
   width: 20vw;
-  height: 70vw;
+  height: 5vw;
   background: #00f;
   position: absolute;
   z-index: 999;
-  top: -65vw;
   margin-left: -10vw;
 }
 @media (min-width: 62em) {
@@ -2367,6 +2368,7 @@ section:nth-child(1) {
 .Project {
   margin-bottom: 10vw;
   cursor: pointer;
+  width: 100%;
 }
 @media (min-width: 62em) {
   .Project {
@@ -2414,14 +2416,11 @@ section:nth-child(1) {
 }
 @media (min-width: 62em) {
   .ProjectDetails {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
   }
 }
 footer {
   padding: 10vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
 }
 @media (min-width: 62em) {
   footer {
@@ -2433,6 +2432,23 @@ footer {
     width: 25rem;
   }
 }
+.FooterLine {
+  width: 40%;
+  height: 1px;
+  background: #000;
+  margin-bottom: 10vw;
+}
+@media (min-width: 62em) {
+  .FooterLine {
+    max-width: 300px;
+  }
+}
+@media (min-width: 62em) {
+  .BottomInfo {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 @media (min-width: 62em) {
   #starbucks {
     margin-top: 20%;
@@ -2442,11 +2458,13 @@ footer {
   #canlis-site {
     width: 30%;
     margin-top: -30%;
+    margin-left: 15%;
   }
 }
 @media (min-width: 62em) {
   #rest {
-    width: 60%;
+    width: 55%;
+    margin-top: 10%;
   }
 }
 @media (min-width: 62em) {
@@ -2460,7 +2478,7 @@ footer {
   }
 }
 #starbucks .ProjectThumbnail {
-  padding-bottom: 100%;
+  padding-bottom: 123.4%;
 }
 #represented .ProjectThumbnail {
   padding-bottom: 123.4%;
