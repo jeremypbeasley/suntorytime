@@ -1514,7 +1514,7 @@ textarea {
     order: 1;
   }
 }
-/*@font-face {
+@font-face {
 font-family: 'CircularStdBook';
 	src: url('_fonts/CircularStdBook.eot');
 	src: url('_fonts/CircularStdBook.eot') format('embedded-opentype'),
@@ -1522,9 +1522,9 @@ font-family: 'CircularStdBook';
 	     url('_fonts/CircularStdBook.woff') format('woff'),
 	     url('_fonts/CircularStdBook.ttf') format('truetype'),
 	     url('_fonts/CircularStdBook.svg#CircularStdBook') format('svg');
-}*/
+}
 
-@font-face {
+/*@font-face {
     font-family: 'MaisonNeueMono';
     src: url('_fonts/maisonneuemono.eot');
     src: url('_fonts/maisonneuemono.eot') format('embedded-opentype'),
@@ -1532,7 +1532,7 @@ font-family: 'CircularStdBook';
          url('_fonts/maisonneuemono.woff') format('woff'),
          url('_fonts/maisonneuemono.ttf') format('truetype'),
          url('_fonts/maisonneuemono.svg#maisonneuemono') format('svg');
-}
+}*/
 
 /*@font-face {
     font-family: 'NeueHaasUnicaProMedium';
@@ -1550,12 +1550,318 @@ font-family: 'CircularStdBook';
          url('_fonts/MaisonNeueWEB-Book.woff') format('woff');
 }*/
 
+.mb0 {
+  margin-bottom: unit0;
+}
+.mb1 {
+  margin-bottom: unit1;
+}
+.mb2 {
+  margin-bottom: unit2;
+}
+.mb3 {
+  margin-bottom: unit3;
+}
+.mb4 {
+  margin-bottom: unit4;
+}
+.mb5 {
+  margin-bottom: unit5;
+}
+.mb6 {
+  margin-bottom: unit6;
+}
+.mb7 {
+  margin-bottom: unit7;
+}
+.mb8 {
+  margin-bottom: unit8;
+}
+.mb9 {
+  margin-bottom: unit9;
+}
+.mb10 {
+  margin-bottom: unit10;
+}
+.mb11 {
+  margin-bottom: unit11;
+}
+.mb12 {
+  margin-bottom: unit12;
+}
+.mb13 {
+  margin-bottom: unit13;
+}
+.mb14 {
+  margin-bottom: unit14;
+}
+.mb15 {
+  margin-bottom: unit15;
+}
+@media (min-width: 62em) {
+  .d-mb0 {
+    margin-bottom: unit0;
+  }
+  .d-mb1 {
+    margin-bottom: unit1;
+  }
+  .d-mb2 {
+    margin-bottom: unit2;
+  }
+  .d-mb3 {
+    margin-bottom: unit3;
+  }
+  .d-mb4 {
+    margin-bottom: unit4;
+  }
+  .d-mb5 {
+    margin-bottom: unit5;
+  }
+  .d-mb6 {
+    margin-bottom: unit6;
+  }
+  .d-mb7 {
+    margin-bottom: unit7;
+  }
+  .d-mb8 {
+    margin-bottom: unit8;
+  }
+  .d-mb9 {
+    margin-bottom: unit9;
+  }
+  .d-mb10 {
+    margin-bottom: unit10;
+  }
+  .d-mb11 {
+    margin-bottom: unit11;
+  }
+  .d-mb12 {
+    margin-bottom: unit12;
+  }
+  .d-mb13 {
+    margin-bottom: unit13;
+  }
+  .d-mb14 {
+    margin-bottom: unit14;
+  }
+  .d-mb15 {
+    margin-bottom: unit15;
+  }
+}
+.mt0 {
+  margin-top: unit0;
+}
+.mt1 {
+  margin-top: unit1;
+}
+.mt2 {
+  margin-top: unit2;
+}
+.mt3 {
+  margin-top: unit3;
+}
+.mt4 {
+  margin-top: unit4;
+}
+.mt5 {
+  margin-top: unit5;
+}
+.mt6 {
+  margin-top: unit6;
+}
+.mt7 {
+  margin-top: unit7;
+}
+.mt8 {
+  margin-top: unit8;
+}
+.mt9 {
+  margin-top: unit9;
+}
+.mt10 {
+  margin-top: unit10;
+}
+@media (min-width: 62em) {
+  .d-mt0 {
+    margin-top: unit0;
+  }
+  .d-mt1 {
+    margin-top: unit1;
+  }
+  .d-mt2 {
+    margin-top: unit2;
+  }
+  .d-mt3 {
+    margin-top: unit3;
+  }
+  .d-mt4 {
+    margin-top: unit4;
+  }
+  .d-mt5 {
+    margin-top: unit5;
+  }
+  .d-mt6 {
+    margin-top: unit6;
+  }
+  .d-mt7 {
+    margin-top: unit7;
+  }
+  .d-mt8 {
+    margin-top: unit8;
+  }
+  .d-mt9 {
+    margin-top: unit9;
+  }
+  .d-mt10 {
+    margin-top: unit10;
+  }
+}
+.ml0 {
+  margin-left: unit0;
+}
+.ml1 {
+  margin-left: unit1;
+}
+.ml2 {
+  margin-left: unit2;
+}
+.ml3 {
+  margin-left: unit3;
+}
+.ml4 {
+  margin-left: unit4;
+}
+.ml5 {
+  margin-left: unit5;
+}
+.ml6 {
+  margin-left: unit6;
+}
+.ml7 {
+  margin-left: unit7;
+}
+.ml8 {
+  margin-left: unit8;
+}
+.ml9 {
+  margin-left: unit9;
+}
+.ml10 {
+  margin-left: unit10;
+}
+.ml11 {
+  margin-left: unit11;
+}
+.ml12 {
+  margin-left: unit12;
+}
+.ml13 {
+  margin-left: unit13;
+}
+.ml14 {
+  margin-left: unit14;
+}
+.ml15 {
+  margin-left: unit15;
+}
+.pb0 {
+  padding-bottom: unit0;
+}
+.pb1 {
+  padding-bottom: unit1;
+}
+.pb2 {
+  padding-bottom: unit2;
+}
+.pb3 {
+  padding-bottom: unit3;
+}
+.pb4 {
+  padding-bottom: unit4;
+}
+.pb5 {
+  padding-bottom: unit5;
+}
+.pb6 {
+  padding-bottom: unit6;
+}
+.pb7 {
+  padding-bottom: unit7;
+}
+.pb8 {
+  padding-bottom: unit8;
+}
+.pb9 {
+  padding-bottom: unit9;
+}
+.pb10 {
+  padding-bottom: unit10;
+}
+.pt0 {
+  padding-top: unit0;
+}
+.pt1 {
+  padding-top: unit1;
+}
+.pt2 {
+  padding-top: unit2;
+}
+.pt3 {
+  padding-top: unit3;
+}
+.pt4 {
+  padding-top: unit4;
+}
+.pt5 {
+  padding-top: unit5;
+}
+.pt6 {
+  padding-top: unit6;
+}
+.pt7 {
+  padding-top: unit7;
+}
+.pt8 {
+  padding-top: unit8;
+}
+.pt9 {
+  padding-top: unit9;
+}
+.pt10 {
+  padding-top: unit10;
+}
+.AlignCenter {
+  align-items: center;
+}
+.AlignTop {
+  align-items: flex-start;
+}
+.ShowDesktop {
+  display: none;
+}
+@media (min-width: 62em) {
+  .ShowDesktop {
+    display: inline;
+  }
+}
+.ShowMobile {
+  display: inline;
+}
+@media (min-width: 62em) {
+  .ShowMobile {
+    display: none;
+  }
+}
+.op50 {
+  opacity: 0.5;
+}
+.op30 {
+  opacity: 0.3;
+}
 html {
-  font-size: 15px;
-  font-family: MaisonNeueMono, Maison, Arial, Sanserif;
-  color: rgba(255,255,255,0.7);
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
+  font-size: 14px;
+  font-family: CircularStdBook, Arial, Sanserif;
+  color: rgba(0,0,0,0.9);
 }
 @media (min-width: 62em) {
   html {
@@ -1567,8 +1873,8 @@ p {
   font-size: 1rem;
 }
 ::selection {
-  color: #000;
-  background: rgba(255,255,255,0.7);
+  color: #fff;
+  background: rgba(0,0,0,0.9);
 }
 .stopSelect {
   -webkit-touch-callout: none;
@@ -1602,7 +1908,7 @@ p.Heading {
   margin: 5rem 0;
 }
 a {
-  color: rgba(255,255,255,0.7);
+  color: rgba(0,0,0,0.9);
   border-bottom: 0.08rem solid #333;
   padding-bottom: 0.1rem;
   text-decoration: none;
@@ -1679,7 +1985,7 @@ h6 {
 .underlined a {
   padding-bottom: 3px;
   border-bottom: #000 solid 1px;
-  color: rgba(255,255,255,0.7);
+  color: rgba(0,0,0,0.9);
 }
 .quote {
   position: relative;
@@ -1690,7 +1996,7 @@ h6 {
   z-index: 15;
 }
 .quote p {
-  color: rgba(255,255,255,0.7);
+  color: rgba(0,0,0,0.9);
 }
 .quote span {
   position: absolute;
@@ -1890,7 +2196,7 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   margin: 0;
-  background: #000;
+  background: #fff;
 }
 .hidden {
   display: none;
@@ -2001,88 +2307,46 @@ section:nth-child(1) {
   padding-bottom: 0.15rem;
   color: #000;
 }
-@media (min-width: 48em) {
-  .Name {
-    margin-bottom: 3.5vw;
-    margin-top: 1.5vw;
-  }
-}
-.WelcomeMessage {
-  height: 4em;
-  display: inline-block;
-  margin-bottom: 2em;
-}
-@media (min-width: 62em) {
-  .WelcomeMessage {
-    height: 3em;
-    margin-bottom: 1em;
-    margin-top: -0.6rem;
-  }
-}
-.WelcomeMessage:after {
-  visibility: visible;
-  content: '';
-  background-color: #000;
-  display: inline-block;
+.Intro {
+  min-height: 100vh;
+  padding: 10vw;
   position: relative;
-  width: 2px;
-  height: 0.9em;
-  top: 5px;
-  margin-left: 5px;
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
+  margin-bottom: 20vw;
 }
-@-webkit-keyframes blink {
-  from, to {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
+.ProfilePhoto {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("http://68.media.tumblr.com/b550403045ed2ca5a5f88bf17e04a7df/tumblr_oga56ubOoF1qzu15ho1_1280.jpg");
+  background-size: cover;
+  margin-left: -10vw;
+  background-color: #a08a55;
+  margin-top: 10vw;
 }
-.typed-cursor {
-  display: none;
+.ProfilePhotoShadow {
+  width: 20vw;
+  height: 70vw;
+  background: #00f;
+  position: absolute;
+  z-index: 999;
+  top: -65vw;
+  margin-left: -10vw;
 }
-.PhotoMe {
-  margin-bottom: 4rem;
+.Project {
+  margin-bottom: 10vw;
 }
-.PhotoMe:hover {
-  transform: rotate(12deg);
+.ProjectThumbnail {
+  width: 100%;
+  height: 0px;
+  background-size: cover;
+  padding-bottom: 100%;
+  background-position: center center;
 }
-@-moz-keyframes blink {
-  from, to {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes blink {
-  from, to {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-@-o-keyframes blink {
-  from, to {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-@keyframes blink {
-  from, to {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
+.ProjectDetails {
+  padding: 5vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 iframe {
   display: none;
