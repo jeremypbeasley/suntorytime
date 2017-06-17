@@ -1865,7 +1865,12 @@ html {
 }
 @media (min-width: 62em) {
   html {
-    font-size: 16px;
+    font-size: 13px;
+  }
+}
+@media (min-width: 90em) {
+  html {
+    font-size: 18px;
   }
 }
 body,
@@ -2311,12 +2316,19 @@ section:nth-child(1) {
 .Intro {
   min-height: calc(100vh - 20vw);
   padding: 10vw;
-  margin-bottom: 20vw;
+  margin-bottom: 0vw;
 }
 @media (min-width: 62em) {
   .Intro {
+    padding: 12vw;
+    width: 50%;
+    margin-bottom: 0;
+    min-height: calc(100vh - 24vw);
+  }
+}
+@media (min-width: 130em) {
+  .Intro {
     padding: 15vw;
-    width: 55%;
     min-height: calc(100vh - 30vw);
   }
 }
@@ -2476,6 +2488,9 @@ footer {
   #happyness {
     width: 30%;
   }
+}
+#canlis-film .ProjectThumbnail {
+  padding-bottom: 50%;
 }
 #starbucks .ProjectThumbnail {
   padding-bottom: 123.4%;

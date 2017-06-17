@@ -110,12 +110,19 @@ section
 .Intro {
   min-height: calc(100vh - 20vw);
   padding: 10vw;
-  margin-bottom: 20vw;
+  margin-bottom: 0vw;
 }
 @media laptop {
   .Intro {
+    padding: 12vw;
+    width: 50%;
+    margin-bottom: 0;
+    min-height: calc(100vh - 24vw);
+  }
+}
+@media biggerscreen {
+  .Intro {
     padding: 15vw;
-    width: 55%;
     min-height: calc(100vh - 30vw);
   }
 }
@@ -276,6 +283,9 @@ footer {
   #happyness {
     width: 30%;
   }
+}
+#canlis-film .ProjectThumbnail {
+  padding-bottom: 50%;
 }
 #starbucks .ProjectThumbnail {
   padding-bottom: 123.4%;
