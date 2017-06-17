@@ -9908,8 +9908,9 @@ $('body').on('click', '.Project', function (){
 	  );
 	  return false;
 	} else {
-		$('.ProjectThumbnailInside').fadeTo(0, 0);
-		$(this).find('.ProjectThumbnailInside').fadeTo(100, 1);
+		// do nothing
+		// $('.ProjectThumbnailInside').fadeTo(0, 0);
+		// $(this).find('.ProjectThumbnailInside').fadeTo(100, 1);
 	}
 });
 
