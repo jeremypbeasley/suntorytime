@@ -1891,7 +1891,10 @@ p {
 }
 p {
   line-height: 190%;
-  margin: 0 0 1.5em 0;
+}
+p margin 0 0 1.5em 0 {
+  position: relative;
+  z-index: 5;
 }
 @media (min-width: 62em) {
   p {
@@ -2525,12 +2528,28 @@ footer {
 .VideoWrapper.Canlis {
   padding-bottom: 58.25%;
 }
+.VideoWrapper.CanlisFilm {
+  padding-bottom: 75%;
+}
+.VideoWrapper.CanlisFilm {
+  padding-bottom: 75%;
+  transform: scale(1.8);
+  margin-left: -5vw;
+  margin-top: 5vw;
+  position: relative;
+  z-index: 0;
+}
 .VideoWrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+img.FullWidth {
+  margin-left: -12vw;
+  width: 100vw;
+  max-width: 100vw;
 }
 .tmblr-iframe--controls-phone-container {
   padding-top: 0px !important;
