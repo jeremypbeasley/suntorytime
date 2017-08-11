@@ -2201,8 +2201,10 @@ ul li:before {
     margin-top: 0px;
   }
 }
-.AlignRight {
-  text-align: right;
+@media (min-width: 62em) {
+  .AlignRight {
+    text-align: right;
+  }
 }
 html {
   min-height: 100%;
