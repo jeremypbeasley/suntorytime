@@ -9902,10 +9902,7 @@ if (document.documentElement.clientWidth > 800) {
 $('body').on('click', '.Project', function (){
 	if ($(this).attr('data-link')) {
 		newlocation = $(this).attr('data-link');
-	  window.open(
-	    newlocation,
-	    '_blank'
-	  );
+	  window.location = newlocation;
 	  return false;
 	} else {
 		// do nothing
