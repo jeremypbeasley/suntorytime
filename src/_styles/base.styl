@@ -323,11 +323,16 @@ footer {
 
 .VideoWrapper.CanlisFilm {
   padding-bottom: 75%;
-  transform: scale(1.8);
-  margin-left: -5vw;
-  margin-top: 5vw;
-  position: relative;
-  z-index: 0;
+}
+
+@media laptop {
+  .VideoWrapper.CanlisFilm {
+    transform: scale(1.8);
+    margin-left: -5vw;
+    margin-top: 5vw;
+    position: relative;
+    z-index: 0;
+  }
 }
 
 .VideoWrapper iframe {
