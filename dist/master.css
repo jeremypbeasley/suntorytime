@@ -2512,7 +2512,7 @@ footer {
   }
 }
 #canlis-film .ProjectThumbnail {
-  padding-bottom: 50%;
+  padding-bottom: 75%;
 }
 #starbucks .ProjectThumbnail {
   padding-bottom: 123.4%;
@@ -2538,6 +2538,9 @@ footer {
 }
 .VideoWrapper.CanlisFilm {
   padding-bottom: 75%;
+}
+.VideoWrapper.CanlisFilmThumb {
+  padding-bottom: 72%;
 }
 @media (min-width: 62em) {
   .VideoWrapper.CanlisFilm {
