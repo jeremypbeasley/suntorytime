@@ -8,12 +8,17 @@ html
   font-smoothing antialiased
   box-sizing border-box
 
-body
+body {
   height 100%
   overflow-y auto
   overflow-x hidden
   margin 0
   background background-color
+}
+body.Negative {
+  background: black;
+  color: white;
+}
 
 .hidden
   display none
@@ -28,12 +33,12 @@ img
 //   opacity 0
 
 section
-  padding 10vw
+  padding 5vw 10vw
   overflow visible
   &:nth-child(1)
     padding-top 10vw
   @media tablet
-    padding 10vw
+    padding 5vw 10vw
     //max-width: 40rem;
     &:nth-child(1)
       padding-top 10vw
@@ -292,4 +297,26 @@ footer {
 }
 #represented .ProjectThumbnail {
   padding-bottom: 123.4%;
+}
+
+.BackLink {
+  //margin-left: -1.2em;
+}
+.BackLink a {
+  color: white;
+  border: none;
+}
+
+.VideoWrapper {
+	position: relative;
+	padding-bottom: 50.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.VideoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }

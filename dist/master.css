@@ -1922,6 +1922,13 @@ a {
 :hover {
   border-color: #fff;
 }
+body.Negative a {
+  color: #fff;
+  border-color: #fff;
+}
+body.Negative a:hover {
+  opacity: 0.5;
+}
 strong {
   font-weight: normal;
   border-bottom: 1px solid #000;
@@ -2188,6 +2195,9 @@ ul li:before {
     margin-top: 0px;
   }
 }
+.AlignRight {
+  text-align: right;
+}
 html {
   min-height: 100%;
 }
@@ -2204,6 +2214,10 @@ body {
   margin: 0;
   background: #fff;
 }
+body.Negative {
+  background: #000;
+  color: #fff;
+}
 .hidden {
   display: none;
   opacity: 0;
@@ -2214,7 +2228,7 @@ img {
   margin: 0;
 }
 section {
-  padding: 10vw;
+  padding: 5vw 10vw;
   overflow: visible;
 }
 section:nth-child(1) {
@@ -2222,7 +2236,7 @@ section:nth-child(1) {
 }
 @media (min-width: 48em) {
   section {
-    padding: 10vw;
+    padding: 5vw 10vw;
   }
   section:nth-child(1) {
     padding-top: 10vw;
@@ -2498,8 +2512,22 @@ footer {
 #represented .ProjectThumbnail {
   padding-bottom: 123.4%;
 }
-iframe {
-  display: none;
+.BackLink a {
+  color: #fff;
+  border: none;
+}
+.VideoWrapper {
+  position: relative;
+  padding-bottom: 50.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.VideoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .tmblr-iframe--controls-phone-container {
   padding-top: 0px !important;
