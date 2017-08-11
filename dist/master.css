@@ -2522,6 +2522,9 @@ footer {
   padding-top: 25px;
   height: 0;
 }
+.VideoWrapper.Canlis {
+  padding-bottom: 58.25%;
+}
 .VideoWrapper iframe {
   position: absolute;
   top: 0;
