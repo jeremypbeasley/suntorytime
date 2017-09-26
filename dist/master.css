@@ -1860,7 +1860,7 @@ font-family: 'CircularStdBook';
 }
 html {
   font-size: 14px;
-  font-family: CircularStdBook, Arial, Sanserif;
+  font-family: NeueHaasUnicaPro-Regular, CircularStdBook, Arial, Sanserif;
   color: rgba(0,0,0,0.9);
 }
 @media (min-width: 62em) {
@@ -1968,7 +1968,8 @@ h1 {
 }
 @media (min-width: 62em) {
   h1 {
-    font-size: 4vw;
+    font-size: 6.5vw;
+    margin: -0.1rem 0 3rem -0.05em;
   }
 }
 h2 {
@@ -2343,7 +2344,6 @@ section:nth-child(1) {
 @media (min-width: 62em) {
   .Intro {
     padding: 12vw;
-    width: 50%;
     margin-bottom: 0;
     min-height: calc(100vh - 24vw);
   }
@@ -2454,12 +2454,7 @@ section:nth-child(1) {
   }
 }
 footer {
-  padding: 10vw;
-}
-@media (min-width: 62em) {
-  footer {
-    padding: 5vw;
-  }
+  padding: 5vw;
 }
 @media (min-width: 62em) {
   footer p {
