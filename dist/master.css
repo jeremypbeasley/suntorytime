@@ -1515,6 +1515,16 @@ textarea {
   }
 }
 @font-face {
+    font-family: 'LinotypeNeueHaasUnicaPro';
+    src: url('_fonts/LinotypeNeueHaasUnicaPro.eot');
+    src: url('_fonts/LinotypeNeueHaasUnicaPro.eot') format('embedded-opentype'),
+         url('_fonts/LinotypeNeueHaasUnicaPro.woff2') format('woff2'),
+         url('_fonts/LinotypeNeueHaasUnicaPro.woff') format('woff'),
+         url('_fonts/LinotypeNeueHaasUnicaPro.ttf') format('truetype'),
+         url('_fonts/LinotypeNeueHaasUnicaPro.svg#LinotypeNeueHaasUnicaPro') format('svg');
+}
+
+/*@font-face {
 font-family: 'CircularStdBook';
 	src: url('_fonts/CircularStdBook.eot');
 	src: url('_fonts/CircularStdBook.eot') format('embedded-opentype'),
@@ -1522,7 +1532,7 @@ font-family: 'CircularStdBook';
 	     url('_fonts/CircularStdBook.woff') format('woff'),
 	     url('_fonts/CircularStdBook.ttf') format('truetype'),
 	     url('_fonts/CircularStdBook.svg#CircularStdBook') format('svg');
-}
+}*/
 
 /*@font-face {
     font-family: 'MaisonNeueMono';
@@ -1860,7 +1870,7 @@ font-family: 'CircularStdBook';
 }
 html {
   font-size: 14px;
-  font-family: NeueHaasUnicaPro-Regular, CircularStdBook, Arial, Sanserif;
+  font-family: LinotypeNeueHaasUnicaPro, Arial, Sanserif;
   color: rgba(0,0,0,0.9);
 }
 @media (min-width: 62em) {
