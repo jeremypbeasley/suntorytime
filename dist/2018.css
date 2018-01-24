@@ -1,5 +1,11 @@
 body {
-  padding: 10vw;
+  padding: 7vw;
+}
+
+@media (min-width: 700px) {
+  body {
+    padding: 10vw;
+  }
 }
 
 img {
@@ -9,7 +15,7 @@ img {
 
 p {
   font-family: IowanOldStyle-Roman, HoeflerText-Regular, Calluna-Light, SabonLT-Roman, Georgia, serif;
-  font-size: 5vw;
+  font-size: 4.5vw;
   line-height: 170%;
   margin: -.5em 0 1.5em 0;
   padding: 0;
@@ -25,8 +31,15 @@ p {
 i {
   font-family: IowanOldStyle-Italic, HoeflerText-Italic, Arial, SabonLT-Italic;
   font-style: normal;
-  border-bottom: 2px solid rgba(0,0,0,.2);
-  padding-bottom: .07em;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  padding-bottom: .05em;
+}
+
+@media (min-width: 700px) {
+  i {
+    border-bottom: 2px solid rgba(0,0,0,.2);
+    padding-bottom: .07em;
+  }
 }
 
 a {
