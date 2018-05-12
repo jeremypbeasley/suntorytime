@@ -15,17 +15,11 @@ img {
 
 p {
   font-family: IowanOldStyle-Roman, HoeflerText-Regular, Calluna-Light, SabonLT-Roman, Georgia, serif;
-  font-size: 4.5vw;
+  font-size: 1rem;
   line-height: 170%;
   margin: -.5em 0 1.5em 0;
   padding: 0;
   max-width: 20em
-}
-@media (min-width: 700px) {
-  p {
-    font-size: 2vw;
-    max-width: 25em
-  }
 }
 
 i {
